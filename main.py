@@ -2,7 +2,7 @@ import streamlit as st
 import textwrap
 
 def format_text(text, line_length):
-    paragraphs = text.split("\n\n")  # Розбиваємо на параграфи
+    paragraphs = text.split("\n\n")
     formatted_paragraphs = ["\n".join(textwrap.wrap(p, width=line_length)) for p in paragraphs]
     return "\n\n".join(formatted_paragraphs)
 
